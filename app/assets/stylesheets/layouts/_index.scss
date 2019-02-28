@@ -1,5 +1,38 @@
-// Import your layouts CSS files here.
-// Examples:
-// @import "dashboard";
-// @import "profile";
-// @import "map";
+.margintop20 {
+  margin-top: 20px;
+}
+
+.marginbottom20 {
+  margin-bottom: 20px;
+}
+
+.index_image {
+height: calc(100vh - 70px);
+background-position: center;
+background-size: cover;
+}
+
+.index_image .fas {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.banner_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center
+}
+
+.main_text {
+  font-family: 'Srisakdi', cursive;
+  font-size: 50px;
+  color: white;
+}
+
+.card-image img {
+  height: 70vh;
+  width: 100%;
+}
+

@@ -1,0 +1,17 @@
+<div class=" row margintop20">
+  <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-3">
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag("cocktail1.jpg") %>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title"><%= cocktail.name %></h5>
+          <%= link_to "See more", cocktail_path(cocktail), class: 'card-link' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to 'Create a cocktail',   new_cocktail_path, class: 'btn btn-primary margintop20 marginbottom20' %>
