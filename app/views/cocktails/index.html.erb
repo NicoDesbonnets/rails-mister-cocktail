@@ -3,7 +3,7 @@
     <div class="col-xs-12 col-sm-3">
       <div class="card">
         <div class="card-image">
-          <%= cl_image_tag cocktail.photo %>
+          <%= cl_image_tag cocktail.photo, height: 448, crop: :thumb %>
         </div>
         <div class="card-body text-center">
           <h5 class="card-title"><%= cocktail.name %></h5>
