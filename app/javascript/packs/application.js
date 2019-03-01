@@ -7,5 +7,12 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 import 'bootstrap';
+import '../components/banner';
 import { loadDynamicBannerText } from '../components/banner';
 loadDynamicBannerText();
+import { scrollPage } from '../components/button';
+
+const bouton = document.querySelector(".fa-arrow-circle-down");
+if (bouton) {
+  scrollPage();
+};

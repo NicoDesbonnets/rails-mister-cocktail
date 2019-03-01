@@ -1,10 +1,7 @@
 <div class="cocktail-detail-card">
   <div class="cocktail-detail text-center">
     <h1><%= @cocktail.name %></h1>
-    <% @cocktail.ingredients.each do |ingredient| %>
-        <li> <%= ingredient.name %></li>
-      <% end %>
-    <ul>
+    <ul style='list-style: none; padding-left: 0px'>
       <% @cocktail.doses.each do |dose| %>
         <li> <%= dose.description %> - <%= dose.ingredient.name %> - <%= link_to "Delete", dose_path(dose), method: :delete %> </li>
       <% end %>

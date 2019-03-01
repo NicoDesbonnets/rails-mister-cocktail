@@ -16,9 +16,9 @@
   <body style="background-color: rgb(240, 240, 240);">
     <%= render "shared/navbar" %>
     <% if params[:controller] == "cocktails" && params[:action] == 'index'%>
-      <div class="index_image banner_flex" style='background-image: url(<%= asset_url("jager.jpg")%>)'>
-        <p class='main_text'> <span id="banner-typed-text"></span></p>
-        <i class="fas fa-arrow-circle-down"></i>
+      <div class="index_image banner_flex" style='background-image: url(<%= asset_url("main.jpg")%>)'>
+        <p class='main_text' style='color: rgb(253, 208, 55); margin-top: -70px;'> <span id="banner-typed-text"></span></p>
+        <i class="fas fa-arrow-circle-down" style='color: rgb(253, 208, 55)'></i>
       </div>
     <% elsif params[:controller] == "cocktails" && params[:action] == 'show'%>
       <div class="index_image banner_flex" style="background-image: url('<%=cl_image_path @cocktail.photo%>')"">
